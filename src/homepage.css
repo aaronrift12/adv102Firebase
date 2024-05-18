@@ -1,0 +1,137 @@
+/* homepage.css */
+
+@font-face {
+    font-family: myFont;
+    src: url(h1.ttf);
+}
+
+@font-face {
+    font-family: welcome;
+    src: url(welcome.ttf);
+}
+
+.homepage-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/public/homepage2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #101720; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header h1 {
+    font-family: myFont;
+    margin: 0;
+    font-size: 36px; /* Increase font size */
+    color: rgb(243, 231, 231); /* Change text color to white */
+    font-weight: bold; /* Make text bold */
+    animation: fadeInFlow 1.5s ease-out; /* Apply fade-in flow animation */
+}
+
+.homepage-container div {
+    font-size: 30px; /* Increase font size */
+    color: rgb(223, 213, 213); /* Change text color to white */
+    font-weight: bold; /* Make text bold */
+    font-family: welcome;
+    text-align: center; /* Center text horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 5; /* Ensure div expands to fill available vertical space */
+    margin-top: -100px; /* Adjust margin-top to move the text slightly higher */
+}
+
+@keyframes fadeInFlow {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Move the text slightly upward */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Bring the text back to its original position */
+    }
+}
+
+.mini-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.get-started-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #444444;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+    position: absolute; /* Position the button absolutely */
+    top: 470px; /* Position the button 20px from the top */
+    right: 190px; /* Add margin to push the button more towards the right side */
+  }
+  
+  .get-started-button:hover {
+    background-color: #444;
+  }
+  
+  .homepage-container {
+    text-align: center;
+    position: relative; /* Set position to relative for proper positioning of absolute elements */
+  }
+  
+  .highlighted-text {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+
+.mini-navbar li {
+    display: inline;
+    margin-left: 20px; /* Adjust spacing between items */
+    animation: fadeInFlowRightToLeft 1.5s ease-out; /* Apply fade-in flow animation */
+}
+
+@keyframes fadeInFlowRightToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(20px); /* Move the text slightly to the right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Bring the text back to its original position */
+    }
+}
+
+.mini-navbar li:first-child {
+    margin-left: 0;
+}
+
+.mini-navbar a {
+    text-decoration: none;
+    color: #eee8e8; /* Text color */
+}
+
+.mini-navbar a:hover {
+    text-decoration: underline;
+}

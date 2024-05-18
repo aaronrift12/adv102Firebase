@@ -1,0 +1,131 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  min-height: 100vh; /* Ensure it takes full viewport height */
+  padding: 20px;
+}
+
+.exercise-container {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  align-items: stretch; /* Stretch items vertically */
+  gap: 50px; /* Increase the gap between cards */
+  margin-top: 20px; /* Adjust margin from the top */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust based on your layout */
+}
+
+.exercise {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */  
+  justify-content: space-between; /* Space items evenly vertically */
+  border-radius: 20px; /* Increase border radius for curved edges */
+  height: 430px; /* Set a fixed height, increased by 100px */
+  width: 380px; /* Set a fixed width, increased by 100px */
+  padding: 20px; /* Add padding to prevent elements from sticking to corners */
+  transition: transform 0.3s ease; /* Add transition effect for smooth scaling */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Add shadow to the card */
+}
+
+.exercise:hover {
+  transform: scale(1.05); /* Scale up the card when hovered */
+}
+
+.exercise h3 {
+  margin-top: 0; /* Remove default margin for h3 */
+  text-align: center; /* Center the exercise name */
+}
+
+.exercise img {
+  width: 200px; /* Adjust image width as needed */
+  height: 200px; /* Adjust image height as needed */
+  margin-bottom: 10px; /* Add margin at the bottom of the image */
+}
+
+.exercise-details {
+  text-align: center; /* Center text */
+}
+
+.exercise p {
+  margin-top: 10px; /* Adjust the margin between image and description */
+}
+
+.exercise-button {
+  margin-top: 10px; /* Add margin to separate button from description */
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #007bff; /* Set the background color */
+  color: #ffffff; /* Set the text color */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Add border radius for rounded edges */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.exercise-button:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+}
+
+.notification-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.notification {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.notification p {
+  margin-bottom: 10px;
+}
+
+.notification button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notification button:hover {
+  background-color: #0056b3;
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3; /* Light grey */   
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  position: absolute; /* Center the spinner absolutely */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

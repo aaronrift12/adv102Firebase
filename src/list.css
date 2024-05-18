@@ -1,0 +1,125 @@
+.list-container {
+    padding: 120px;
+  }
+    
+  .list-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .chosen-exercises-box {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+  
+  .chosen-exercises-box ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .chosen-exercises-box li {
+    margin-bottom: 30px;
+    padding-bottom: 25px; /* Add padding bottom */
+    border-bottom: 1px solid #ccc; /* Add divider */
+  }
+  
+  .routine {
+    margin-top: 10px; /* Adjust margin between routine and other content */
+  }
+  
+  .routine strong {
+    display: block; /* Make the "Routine:" label a block element */
+    margin-bottom: 8px; /* Add margin between "Routine:" label and routine list */
+  }
+  
+  .routine ul {
+    padding-left: 0; /* Remove default padding for unordered list */
+  }
+  
+  .routine ul li {
+    list-style: none; /* Remove bullet points for list items */
+    margin-bottom: 4px; /* Add margin between routine items */
+  }
+  
+  .save-button, .cancel-button {
+    margin-right: 10px; /* Add a gap of 10px between the buttons */
+  }
+  
+  .edit-button {
+
+    float: right;
+    background-color: #007bff ;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Keep the size */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    
+
+  }
+
+  .delete-button{
+
+    float: right;
+    margin-bottom: 5px;
+    background-color: #ff6666 ;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+  }
+
+  .save-button {
+
+    float: right;
+    background-color: #007bff ;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Keep the size */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+
+  }
+
+  .cancel-button {
+
+    float: right;
+    background-color: #ff6666 ;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Keep the size */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .edit-button:hover {
+    background-color: #0056b3 ;
+  }
+
+  .save-button:hover {
+    background-color: #0056b3 ;
+  }
+
+  .cancel-button:hover {
+    background-color: #ff0000 ;
+  }
+
+  .delete-button:hover {
+    background-color: #ff0000  ;
+  }
